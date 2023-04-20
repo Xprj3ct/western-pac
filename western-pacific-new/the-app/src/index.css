@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ #app-loader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(34, 34, 233);
+}
+/* #show {
+    z-index: -7;
+}
+#hide {
+    z-index: -8;
+} */
+
+#fill  > svg {
+    fill: white !important;
+}
