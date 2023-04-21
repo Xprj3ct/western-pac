@@ -1,4 +1,7 @@
 module.exports = {
+  daisyui: {
+    themes: false,
+  },
   mode: "jit",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -14,5 +17,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

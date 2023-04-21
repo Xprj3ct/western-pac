@@ -1,45 +1,62 @@
 import React from "react";
-import ItemsContainer from "./ItemsContainer";
-import SocialIcons from "./SocialIcons";
-import { Icons } from "./Menus";
+import logo from "../../assets/Logo.png";
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
-        <h1
-          className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
-         md:w-2/5"
-        >
-          <span className="text-teal-400">Free</span> until you're ready to
-          launch
-        </h1>
-        <div>
-          <input
-            type="text"
-            placeholder="Enter Your ph.no"
-            className="text-gray-800
-           sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
-          />
-          <button
-            className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins]
-           rounded-md text-white md:w-auto w-full"
-          >
-            Request Code
-          </button>
-        </div>
+    <footer className="footer p-10 md:p-28 md:text-lg bg-base-200 text-base-content font-semibold font-monserrat text-sm">
+      <div className="flex flex-col -mt-10">
+        <img className="w-32 m-0 p-0 mt-10" src={logo} alt="logo-image" />
+        <p>
+          <span className="uppercase text-[#059CE2] text-xl font-bold ">
+            <span className="text-[#FE8D09]">Western</span> Pacific Solutions
+          </span>
+          <br />
+          <p className="md:pr-0">
+            <span>
+              <h1 className="uppercase font-light">Port harcourt office</h1> 14,
+              Orogbum Cresent old GRA, Port Harcourt.
+            </span>
+          </p>
+          <p className="md:pr-0">
+            <span>
+              <h1 className="uppercase font-light">Lagos office</h1> 13, olalade
+              kazeem Gernade Estate, Idimu, Lagos.
+            </span>
+          </p>
+        </p>
       </div>
-      <ItemsContainer />
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-      text-center pt-2 text-gray-400 text-sm pb-8"
-      >
-        <span>© 2020 Appy. All rights reserved.</span>
-        <span>Terms · Privacy Policy</span>
-        <SocialIcons Icons={Icons} />
+      <div className="uppercase">
+        <span className="footer-title text-[#059CE2]">Explore</span>
+        <a href="/About" className="link link-hover">
+          Who we are
+        </a>
+        <a href="/Services" className="link link-hover">
+          Services
+        </a>
+        <a className="link link-hover">
+          faq<span className="lowercase">s</span>
+        </a>
+      </div>
+      <div className="uppercase">
+        <span className="footer-title text-[#059CE2]">Company</span>
+        <a href="/Projects" className="link link-hover">
+          Partners
+        </a>
+        <a href="/Contact" className="link link-hover">
+          Contact
+        </a>
+        <a className="link link-hover">Customer support</a>
+      </div>
+      <div className="uppercase">
+        <span className="footer-title uppercase text-[#2cbcff]">reach out</span>
+        <a className="link link-hover">PH: 234-815-236-3717</a>
+        <a className="link link-hover">PH: 234-8086-688-557</a>
+        <a href="mailto:info@luckylumac.com" className="link text-blue-500 link-hover">
+          info@pacificsolutions.com
+        </a>
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;

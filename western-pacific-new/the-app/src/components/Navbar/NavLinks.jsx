@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { links } from "./Mylinks";
 import "./Navbar.css"
 
@@ -56,6 +56,8 @@ const NavLinks = () => {
                           <li className="text-lg text-gray-600 my-5">
                             <Link
                               to={slink.link}
+                              smooth={true}
+                              duration={500}
                               className="hover:text-primary"
                             >
                               {slink.name}
@@ -101,7 +103,9 @@ const NavLinks = () => {
                   >
                     {slinks.sublink.map((slink) => (
                       <li className="py-3 hover:text-blue-600  transition pl-14">
-                        <Link to={slink.link}>{slink.name}</Link>
+                        <Link to={slink.link} smooth={true} duration={500}>
+                          {slink.name}
+                        </Link>
                       </li>
                     ))}
                   </div>
