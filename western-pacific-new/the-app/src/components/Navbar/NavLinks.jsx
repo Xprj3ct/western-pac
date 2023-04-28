@@ -6,6 +6,8 @@ import "./Navbar.css"
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
+   const [open, setOpen] = useState(false);
+  
   return (
     <>
       {links.map((link) => (
@@ -74,7 +76,7 @@ const NavLinks = () => {
           {/* Mobile menus */}
           <div
             id="mobile-nav"
-            className={`
+            className={` ${open ? "left-0" : "left-[-100%]"}
             ${heading === link.name ? "md:hidden" : "hidden"}
           `}
           >
@@ -103,7 +105,12 @@ const NavLinks = () => {
                   >
                     {slinks.sublink.map((slink) => (
                       <li className="py-3 hover:text-blue-600  transition pl-14">
-                        <Link to={slink.link} smooth={true} duration={500}>
+                        <Link
+                          to={slink.link}
+                          smooth={true}
+                          duration={500}
+                          onClick={() => setOpen(false)}
+                        >
                           {slink.name}
                         </Link>
                       </li>

@@ -20,6 +20,8 @@
     "react-slick": "^0.29.0",
     "react-spinners": "^0.13.8",
     "react-typewriter-effect": "^1.1.0",
+    "react-whatsapp-chat-widget": "^1.1.6",
+    "sass": "^1.62.1",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.1.1"
   },

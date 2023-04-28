@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import { sliderData } from "../../../slider-data";
+import { sliderData } from "../../../slider-data"; 
 import "./Slider.css";
 // import TypeWriterEffect from 'react-typewriter-effect';
 

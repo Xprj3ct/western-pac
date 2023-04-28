@@ -87,6 +87,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/"
+              onClick={() => setOpen(false)}
               className="py-7 hover:text-blue-600 px-3 inline-block "
             >
               Home
@@ -97,6 +98,7 @@ const Navbar = () => {
               to="who"
               smooth={true}
               duration={500}
+              onClick={() => setOpen(false)}
               className="py-7 hover:text-blue-600 px-3 inline-block"
             >
               Who are we?
@@ -108,6 +110,7 @@ const Navbar = () => {
               to="partners"
               smooth={true}
               duration={500}
+              onClick={() => setOpen(false)}
               className="py-7 px-3 hover:text-blue-600 inline-block"
             >
               Partners
@@ -118,6 +121,7 @@ const Navbar = () => {
               to="nocorners"
               smooth={true}
               duration={500}
+              onClick={() => setOpen(false)}
               className="py-7 hover:text-blue-600 px-3 inline-block"
             >
               Contact us
