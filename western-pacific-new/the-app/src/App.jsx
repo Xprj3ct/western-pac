@@ -12,7 +12,8 @@ import { BeatLoader } from "react-spinners";
 import { BrowserRouter } from "react-router-dom";
 import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
-import User from "../src/assets/favicon.jpg"
+import User from "../src/assets/favicon.png"
+import Sailor from "../src/assets/animation.gif.mp4"
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -27,9 +28,12 @@ const App = () => {
     <div className="app">
       {loading ? (
         <div id="app-loader">
-          <BeatLoader color={"white"} loading={loading} />
-          <span className="text-orange-100 font-monserrat font-bold my-4">
-            Loading.
+          <div className="my-5">
+            <video src={Sailor} autoPlay loop muted className="h-" />
+          </div>
+          <BeatLoader color={"blue"} loading={loading} />
+          <span className="text-blue-700 font-monserrat font-bold my-4">
+            Loading...
           </span>
         </div>
       ) : (
@@ -49,14 +53,14 @@ const App = () => {
           </div>
           <div>
             <WhatsAppWidget
-              phoneNo="919884098840"
+              phoneNo="08086688557"
               position="right"
               widgetWidth="300px"
               widgetWidthMobile="260px"
               autoOpen={true}
               autoOpenTimer={5000}
               messageBox={true}
-              messageBoxTxt="Hi Team, i need your services?"
+              messageBoxTxt="Hi, i need your services"
               iconSize="40"
               iconColor="white"
               iconBgColor="#25D366"
@@ -64,7 +68,7 @@ const App = () => {
               headerIconColor="green"
               headerTxtColor="white"
               headerBgColor="	#25D366"
-              headerTitle="John Doe"
+              headerTitle="Western Pacific Solutions"
               headerCaption="online"
               bodyBgColor="#bbb"
               chatPersonName="Support"

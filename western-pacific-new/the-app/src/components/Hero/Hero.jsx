@@ -12,6 +12,8 @@ import Dirt from '../../assets/dirt.jpg'
 import TypeWriterEffect from 'react-typewriter-effect';
 
 const Hero = () => {
+  const imageURL =
+    "https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1046&q=80";
   return (
     <section className="overflow-x-hidden">
       <div className="grid lg:grid-cols-12 md:mb-0 mb-12">
@@ -34,7 +36,7 @@ const Hero = () => {
         >
           <div id="who" className="lg:pb-10 pr-4 lg:pr-0">
             <h1 className="text-jet text-[2rem] py-5 lg:text-[3rem] lg:text-5xl font-extrabold tracking-wider uppercase lg:pt-0 ">
-              <span className="text-blue-600 flex gap-3">
+              <span className="text-blue-600 flex flex-col gap-3">
                 <span className="text-[#021D27]">OUR</span>{" "}
                 <span>
                   <TypeWriterEffect
@@ -42,7 +44,7 @@ const Hero = () => {
                       fontFamily: "Montserrat, sans-serif",
                       color: "rgb(34, 34, 233)",
                       fontWeight: 700,
-                      display: "block",
+                      display: "",
                     }}
                     startDelay={2000}
                     cursorColor="rgb(34, 34, 233)"
@@ -327,7 +329,6 @@ const Hero = () => {
             </p>
           </div>
           <div
-            
             className="lg:col-span-6 col-span-12 flex items-center justify-center h-[300px] lg:h-full mt-2"
             data-aos="fade-up"
           >
@@ -340,9 +341,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="lg:grid lg:grid-cols-12">
-          <div id="ds"
+          <div
+            id="ds"
             className="lg:col-span-6 col-span-12 h-[300px] lg:h-[500px] flex items-center md:justify-center"
-          
           >
             <img
               src={Dredging}
@@ -373,8 +374,8 @@ const Hero = () => {
 
       <div>
         <div id="mas" className="w-full">
-          <div className="grid grid-cols-12 md:h-[70vh] w-full overflow-hidden">
-            <div className="col-span-12 md:flex  flex-col hidden md:col-span-6 px-10 bg-white justify-center mr-96 text-xl overflow-y-hidden ">
+          <div className="grid grid-cols-12 md:h-[100vh] w-full overflow-hidden">
+            <div className="col-span-12 md:flex  flex-col hidden md:col-span-6 px-10 bg-white justify-center text-xl overflow-y-hidden ">
               <h1 className="uppercase text-4xl my-4 font-bold text-orange-600">
                 Marine Advisory Services
               </h1>
@@ -420,8 +421,8 @@ const Hero = () => {
               </p>
             </div>
             <div className="col-span-12 md:col-span-4 h-auto bg-orange-600 flex md:flex-row flex-col items-center justify-center w-full">
-              <div className="md:-ml-[28rem]" data-aos="">
-                <img src={Man} alt="human-being" />
+              <div className="md:-ml-[]" data-aos="">
+                <img src={Man} alt="human-being" className="md:mx-10" />
               </div>
 
               <p className="text-white px-10 py-5 md:hidden overflow-hidden block h-full ">
@@ -477,11 +478,11 @@ const Hero = () => {
             className="lg:col-span-6 col-span-12 green-bg flex flex-col items-left pl-9 pr-16 py-14 w-full h-full"
             data-aos="fade-left"
           >
-            <h1 className="text-gray-500 uppercase text-xl md:text-[2.5rem] text-muted py-1 md:mr-0 mr-2  md:text-left">
+            <h1 className="text-gray-500 uppercase text-xl md:text-[2.5rem] flex flex-col gap-3 my-5 text-muted py-1 md:mr-0 mr-2  md:text-left">
               <span className="text-blue-700 font-bold uppercase">
                 Rig and vessel
               </span>{" "}
-              Maintenance.
+              <span>Maintenance</span>
             </h1>
             <p className="md:text-xl text-md">
               Having a pool of dedicated men with years of experience in Marine
@@ -518,7 +519,39 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="lg:grid lg:grid-cols-12 md:h-[80vh]">
+
+        <div className="flex flex-col md:flex-row h-screen">
+          {/* Left column for text */}
+          <div className="md:w-1/2 bg-gray-100 flex items-center justify-center">
+            <div className="max-w-lg p-4">
+              <h1 className="text-4xl font-bold mb-4 uppercase">
+                Construction and Remodelling Services.
+              </h1>
+              <p className="text-lg mb-4">
+                Our company provides high-quality construction and remodelling
+                services for commercial and residential properties. Our
+                experienced professionals work closely with clients to
+                incorporate their unique ideas and deliver exceptional results.
+                We specialize in new construction projects, renovations,
+                additions, and remodelling of existing structures using only the
+                best materials and equipment. Our goal is to create functional,
+                beautiful spaces within budget and on time. Contact us today for
+                exceptional customer service and to discuss your project needs.
+              </p>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                See Our works 
+              </button>
+            </div>
+          </div>
+
+          {/* Right column for image */}
+          <div
+            className="md:w-1/2 h-screen bg-cover bg-center"
+            style={{ backgroundImage: `url(${imageURL})` }}
+          ></div>
+        </div>
+
+        <div className="lg:grid lg:grid-cols-12 md:h-[100vh]">
           <div
             className="lg:col-span-6 col-span-12 flex items-center justify-center h-[300px] lg:h-full"
             id="escape"
@@ -526,7 +559,7 @@ const Hero = () => {
             <img
               src={Diving}
               alt="construction-image"
-              className=" w-[200px] h-[200px] md:h-[600px] md:w-[600px] object-cover"
+              className=" w-[200px] h-[200px] md:h-[400px] md:w-[400px] object-cover"
               id="circle"
             />
           </div>
@@ -535,7 +568,7 @@ const Hero = () => {
             className="lg:col-span-6 col-span-12 flex flex-col items-left md:pl-9 px-10 md:pr-16 md:py-14 justify-center w-full text-muted h-full md:text-left"
             data-aos="fade-up"
           >
-            <h1 className="text-blue-700 uppercase  text-center md:text-left text-xl md:text-[2.5rem] py-1 flex gap-2 md:justify-start justify-center ">
+            <h1 className="text-blue-700 uppercase my-5 text-center md:text-left text-xl md:text-[2.5rem] py-1 flex gap-2 md:justify-start justify-center ">
               <span className="text-muted font-bold">Diving</span>
               <span>
                 {" "}

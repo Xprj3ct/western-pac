@@ -7,8 +7,8 @@ export const links = [
         Head: "",
         sublink: [
           { name: "Engineering design Services", link: "engr" },
-          { name: "marine support services", link: "mss" },
-          { name: "marine advisory services", link: "mas" },
+          { name: "Marine support services", link: "mss" },
+          { name: "Marine advisory services", link: "mas" },
           { name: "Diving services", link: "dss" },
         ],
       },
@@ -16,8 +16,9 @@ export const links = [
         Head: "",
         sublink: [
           { name: "Waste management services", link: "wms" },
-          { name: "rig and vessel maintenance", link: "rvm" },
-          { name: "dredging services", link: "ds" },
+          { name: "Rig and vessel maintenance", link: "rvm" },
+          { name: "Dredging services", link: "ds" },
+          { name: "Construction and remodelling services", link: "dds" },
         ],
       },
     ],

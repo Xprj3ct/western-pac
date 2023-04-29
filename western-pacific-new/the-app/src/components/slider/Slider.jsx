@@ -53,11 +53,11 @@ const Slider = () => {
                   className=" md:h-[100vh] object-cover md:object-fill"
                 />
                 <div className="content flex h-full justify-center w-full items-center flex-col py-28">
-                  <div className="mx-auto max-w-[1600px] w-full items-center md:px-0 px-4">
-                    <h1 className="text-white flex md:w-[60%] md:text-6xl text-4xl font-bold tracking-wider">
+                  <div className="mx-auto max-w-[1600px] w-full items-center md:px-10 px-4">
+                    <h1 className="text-white flex md:w-[60%] md:text-4xl text-4xl font-bold tracking-wider">
                       {slide.heading}
                     </h1>
-                    <p className="md:text-4xl font-semibold md:w-[60%] py-4">
+                    <p className="md:text-2xl font-semibold md:w-[60%] py-4">
                       {slide.desc}
                     </p>
                     <div className="flex md:gap-10">

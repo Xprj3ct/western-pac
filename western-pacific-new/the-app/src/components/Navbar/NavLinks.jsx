@@ -6,8 +6,14 @@ import "./Navbar.css"
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
+  const [togglerNav, setTogglerNav] = useState(false);
    const [open, setOpen] = useState(false);
-  
+    const handleSublinkClick = (sublink) => {
+      setOpen(false);
+      setSubHeading(sublink);
+      setTogglerNav(!togglerNav);
+    };
+
   return (
     <>
       {links.map((link) => (
@@ -109,7 +115,7 @@ const NavLinks = () => {
                           to={slink.link}
                           smooth={true}
                           duration={500}
-                          onClick={() => setOpen(false)}
+                          onClick={() => handleSublinkClick(slink.name)}
                         >
                           {slink.name}
                         </Link>

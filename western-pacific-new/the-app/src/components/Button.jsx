@@ -20,11 +20,6 @@ const Button = () => {
         <button className=" text-2xl">
           <FaTwitterSquare />
         </button>
-        <span className="text-sm flex items-center">|</span>
-
-        <button className="text-green-700 text-2xl">
-          <IoLogoWhatsapp />
-        </button>
       </div>
       {/* <button className="bg-primary text-white  px-6 py-2 rounded-md ">
         +234-808-668-8557

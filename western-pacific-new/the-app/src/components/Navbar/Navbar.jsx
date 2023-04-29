@@ -58,7 +58,7 @@ const Navbar = () => {
               onClick={clickHandler}
               className="py-7 px-3 hover:border-b-4 hover:border-b-blue-600 transition-all ease-in-out n hover:text-blue-600 inline-block"
             >
-              PARTNERS
+              Clients
             </Link>
           </li>
           <li>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <Link
               to="/"
               onClick={() => setOpen(false)}
-              className="py-7 hover:text-blue-600 px-3 inline-block "
+              className="py-7 uppercase hover:text-blue-600 px-3 inline-block "
             >
               Home
             </Link>
@@ -99,21 +99,113 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               onClick={() => setOpen(false)}
-              className="py-7 hover:text-blue-600 px-3 inline-block"
+              className="py-7 uppercase hover:text-blue-600 px-3 inline-block"
             >
               Who are we?
             </Link>
           </li>
-          <NavLinks />
+          <li className="px-3 py-2 text-gray-400 uppercase">
+            Services
+            <ul className="border-l-2">
+              <li>
+                <Link
+                  to="engr"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                  className="py-3 uppercase text-sm text-black px-3 hover:text-blue-600 inline-block"
+                >
+                  Engineering design Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="mss"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                  className="py-3 uppercase text-sm text-black px-3 hover:text-blue-600 inline-block"
+                >
+                  Marine support services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="mas"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                  className="py-3 uppercase text-sm text-black px-3 hover:text-blue-600 inline-block"
+                >
+                  Marine advisory services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="dss"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                  className="py-3 uppercase text-sm text-black px-3 hover:text-blue-600 inline-block"
+                >
+                  Diving services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="wms"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                  className="py-3 uppercase text-sm text-black px-3 hover:text-blue-600 inline-block"
+                >
+                  Waste management services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="rvm"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                  className="py-3 uppercase text-sm text-black px-3 hover:text-blue-600 inline-block"
+                >
+                  Rig and vessel maintenance
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="ds"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                  className="py-3 uppercase text-sm text-black px-3 hover:text-blue-600 inline-block"
+                >
+                  Dredging services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="dds"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                  className="py-3 uppercase text-sm text-black px-3 hover:text-blue-600 inline-block"
+                >
+                  Construction and remodelling
+                </Link>
+              </li>
+            </ul>
+          </li>
           <li>
             <Link
               to="partners"
               smooth={true}
               duration={500}
               onClick={() => setOpen(false)}
-              className="py-7 px-3 hover:text-blue-600 inline-block"
+              className="py-7 uppercase px-3 hover:text-blue-600 inline-block"
             >
-              Partners
+              Clients
             </Link>
           </li>
           <li>
@@ -122,7 +214,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               onClick={() => setOpen(false)}
-              className="py-7 hover:text-blue-600 px-3 inline-block"
+              className="py-7 uppercase  hover:text-blue-600 px-3 inline-block"
             >
               Contact us
             </Link>
