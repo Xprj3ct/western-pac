@@ -7,7 +7,7 @@ import Dredging from '../../assets/Dredging2.png'
 import Design from '../../assets/Engineeringdesign.png'
 import RigandVessel from '../../assets/rigandvessel.png'
 import Marinesupport from '../../assets/Marine support.png'
-import Diving from '../../assets/Diving.png'
+import Diving from '../../assets/diving.png'
 import Dirt from '../../assets/dirt.jpg'
 import TypeWriterEffect from 'react-typewriter-effect';
 
